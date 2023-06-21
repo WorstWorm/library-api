@@ -2,7 +2,6 @@ package com.library.mapper;
 
 import com.library.domain.User;
 import com.library.dto.UserDto;
-import com.library.enums.UserStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

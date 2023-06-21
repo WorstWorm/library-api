@@ -1,6 +1,5 @@
 package com.library.dto;
 
-import com.library.enums.UserStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

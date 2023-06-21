@@ -2,10 +2,12 @@ package com.library.mapper;
 
 import com.library.domain.Borrowing;
 import com.library.dto.BorrowingDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class BorrowingMapper {
     public Borrowing mapToBorrowing(final BorrowingDto borrowingDto) {
         return new Borrowing(

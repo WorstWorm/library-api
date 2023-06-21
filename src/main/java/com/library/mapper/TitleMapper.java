@@ -2,10 +2,12 @@ package com.library.mapper;
 
 import com.library.domain.Title;
 import com.library.dto.TitleDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class TitleMapper {
 
     public Title mapToTitle(final TitleDto titleDto) {

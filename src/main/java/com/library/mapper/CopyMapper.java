@@ -3,10 +3,12 @@ package com.library.mapper;
 import com.library.domain.Copy;
 import com.library.dto.CopyDto;
 import com.library.enums.CopyStatus;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class CopyMapper {
 
     public Copy mapToCopy(final CopyDto copyDto) {
