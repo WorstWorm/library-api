@@ -32,4 +32,10 @@ public class Borrowing {
 
     @Column(name = "return_date")
     private LocalDate returnDate;
+
+    public Borrowing(Long readerId, Long copyId, LocalDate borrowingDate) {
+        this.readerId = readerId;
+        this.copyId = copyId;
+        this.borrowingDate = borrowingDate;
+    }
 }

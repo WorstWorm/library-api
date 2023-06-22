@@ -1,5 +1,6 @@
 package com.library.dto;
 
+import com.library.enums.UserStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,9 +20,9 @@ public class UserDto {
     private LocalDate creationDate;
 //    private UserStatus userStatus;
 
-    public UserDto(String firstName, String lastName, LocalDate creationDate) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.creationDate = creationDate;
-    }
+//    public UserDto(String firstName, String lastName, LocalDate creationDate) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.creationDate = creationDate;
+//    }
 }

@@ -29,7 +29,7 @@ public class User {
 
     @Column(name = "creation_date")
     private LocalDate creationDate;
-//
+
 //    @Column(name = "user_status")
 //    private String userStatus;
 }

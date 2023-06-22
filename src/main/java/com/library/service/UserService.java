@@ -31,6 +31,7 @@ public class UserService {
             userModificated.setFirstName(user.getFirstName());
             userModificated.setLastName(user.getLastName());
             userModificated.setCreationDate(user.getCreationDate());
+//            userModificated.setUserStatus(user.getUserStatus());
             userRepository.save(userModificated);
         } else {
             throw new UserNotFoundException();
