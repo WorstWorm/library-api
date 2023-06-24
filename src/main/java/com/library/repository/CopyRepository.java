@@ -11,7 +11,9 @@ import java.util.Optional;
 public interface CopyRepository extends CrudRepository<Copy, Long> {
 
     @Override
-    Optional<Copy> findById(Long id);
+    Optional<Copy> findById(Long copyId);
+
+    List<Copy> findCopiesByTitleId(Long titleId);
 
     @Override
     List<Copy> findAll();
@@ -20,5 +22,5 @@ public interface CopyRepository extends CrudRepository<Copy, Long> {
     Copy save(Copy copy);
 
     @Override
-    void deleteById(Long id);
+    void deleteById(Long copyId);
 }

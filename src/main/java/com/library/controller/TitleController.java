@@ -37,7 +37,7 @@ public class TitleController {
     }
 
     @PutMapping(path="/updateTitle/{id}", consumes= MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<TitleDto> updateTitle(@PathVariable("id") long id, @RequestBody TitleDto titleDto) throws TitleNotFoundException {
+    public ResponseEntity<TitleDto> updateTitle(@PathVariable("id") long id, @RequestBody TitleDto titleDto) {
         titleService.updateTitle(id, titleMapper.mapToTitle(titleDto));
         return ResponseEntity.ok(titleMapper.mapToTitleDto(titleService.getTitle(titleDto.getTitleId())));
     }

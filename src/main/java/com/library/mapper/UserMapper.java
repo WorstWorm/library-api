@@ -2,7 +2,6 @@ package com.library.mapper;
 
 import com.library.domain.User;
 import com.library.dto.UserDto;
-import com.library.enums.UserStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,8 +16,8 @@ public class UserMapper {
                 userDto.getUserId(),
                 userDto.getFirstName(),
                 userDto.getLastName(),
-                userDto.getCreationDate()
-//                userDto.getUserStatus().getStatus()
+                userDto.getCreationDate(),
+                userDto.getUserStatus()
         );
     }
 
@@ -27,8 +26,8 @@ public class UserMapper {
                 user.get().getUserId(),
                 user.get().getFirstName(),
                 user.get().getLastName(),
-                user.get().getCreationDate()
-//                UserStatus.valueOf(user.get().getUserStatus())
+                user.get().getCreationDate(),
+                user.get().getUserStatus()
         );
     }
 
@@ -37,8 +36,8 @@ public class UserMapper {
                 user.getUserId(),
                 user.getFirstName(),
                 user.getLastName(),
-                user.getCreationDate()
-//                UserStatus.valueOf(user.getUserStatus())
+                user.getCreationDate(),
+                user.getUserStatus()
         );
     }
 

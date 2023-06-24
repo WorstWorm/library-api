@@ -37,7 +37,7 @@ public class CopyController {
     }
 
     @PutMapping(path="/updateCopy/{id}", consumes= MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<CopyDto> updateCopy(@PathVariable("id") long id, @RequestBody CopyDto copyDto) throws CopyNotFoundException {
+    public ResponseEntity<CopyDto> updateCopy(@PathVariable("id") long id, @RequestBody CopyDto copyDto) {
         copyService.updateCopy(id, copyMapper.mapToCopy(copyDto));
         return ResponseEntity.ok(copyMapper.mapToCopyDto(copyService.getCopy(copyDto.getCopyId())));
     }

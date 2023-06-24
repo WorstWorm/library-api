@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface TitleRepository extends CrudRepository<Title, Long> {
 
     @Override
-    Optional<Title> findById(Long id);
+    Optional<Title> findById(Long titleId);
 
     @Override
     List<Title> findAll();
@@ -20,5 +20,5 @@ public interface TitleRepository extends CrudRepository<Title, Long> {
     Title save(Title title);
 
     @Override
-    void deleteById(Long id);
+    void deleteById(Long titleId);
 }

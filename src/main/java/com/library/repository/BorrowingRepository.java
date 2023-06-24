@@ -11,7 +11,9 @@ import java.util.Optional;
 public interface BorrowingRepository extends CrudRepository<Borrowing, Long> {
 
     @Override
-    Optional<Borrowing> findById(Long id);
+    Optional<Borrowing> findById(Long borrowingId);
+
+    Borrowing findBorrowingByCopyId(Long copyId);
 
     @Override
     List<Borrowing> findAll();
@@ -20,5 +22,5 @@ public interface BorrowingRepository extends CrudRepository<Borrowing, Long> {
     Borrowing save(Borrowing borrowing);
 
     @Override
-    void deleteById(Long id);
+    void deleteById(Long borrowingId);
 }

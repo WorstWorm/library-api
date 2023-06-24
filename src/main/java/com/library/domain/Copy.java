@@ -1,5 +1,6 @@
 package com.library.domain;
 
+import com.library.enums.CopyStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -23,5 +24,6 @@ public class Copy {
     private Long titleId;
 
     @Column(name = "copy_status")
-    private String copyStatus;
+    @Enumerated(value = EnumType.STRING)
+    private CopyStatus copyStatus;
 }

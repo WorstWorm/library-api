@@ -6,7 +6,7 @@ public enum CopyStatus {
     BORROWED("borrowed"),
     ONSITE("available only on site");
 
-    private String status;
+    private final String status;
 
     CopyStatus(String status) {
         this.status = status;
@@ -15,5 +15,7 @@ public enum CopyStatus {
     public String getStatus() {
         return status;
     }
+
+
 
 }

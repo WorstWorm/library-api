@@ -18,11 +18,12 @@ public class UserDto {
     private String firstName;
     private String lastName;
     private LocalDate creationDate;
-//    private UserStatus userStatus;
+    private UserStatus userStatus;
 
-//    public UserDto(String firstName, String lastName, LocalDate creationDate) {
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//        this.creationDate = creationDate;
-//    }
+    public UserDto(String firstName, String lastName, LocalDate creationDate, UserStatus userStatus) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.creationDate = creationDate;
+        this.userStatus = userStatus;
+    }
 }

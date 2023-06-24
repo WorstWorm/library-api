@@ -2,7 +2,6 @@ package com.library.mapper;
 
 import com.library.domain.Copy;
 import com.library.dto.CopyDto;
-import com.library.enums.CopyStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +14,7 @@ public class CopyMapper {
         return new Copy(
                 copyDto.getCopyId(),
                 copyDto.getTitleId(),
-                copyDto.getCopyStatus().getStatus()
+                copyDto.getCopyStatus()
         );
     }
 
@@ -23,7 +22,7 @@ public class CopyMapper {
         return new CopyDto(
                 copy.getCopyId(),
                 copy.getTitleId(),
-                CopyStatus.valueOf(copy.getCopyStatus())
+                copy.getCopyStatus()
         );
     }
 

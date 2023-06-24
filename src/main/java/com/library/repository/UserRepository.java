@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface UserRepository extends CrudRepository<User, Long> {
 
     @Override
-    Optional<User> findById(Long id);
+    Optional<User> findById(Long userId);
 
     @Override
     List<User> findAll();
@@ -20,6 +20,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
     User save(User user);
 
     @Override
-    void deleteById(Long id);
+    void deleteById(Long userId);
 
 }

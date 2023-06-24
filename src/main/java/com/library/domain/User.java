@@ -1,5 +1,6 @@
 package com.library.domain;
 
+import com.library.enums.UserStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,6 +31,7 @@ public class User {
     @Column(name = "creation_date")
     private LocalDate creationDate;
 
-//    @Column(name = "user_status")
-//    private String userStatus;
+    @Column(name = "user_status")
+    @Enumerated(value = EnumType.STRING)
+    private UserStatus userStatus;
 }
